@@ -7,6 +7,44 @@ body {
     font-family: calibri;
     color: white;
 }
+/* media query */
+/* tablet : layout yang ditampilkan 2 kolom*/
+
+@media screen and (min-width: 600px){
+    body{
+        background-color: yellow;
+    }
+    .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
+    .col-sm-12{
+        width: 50%;
+        float: left;
+    }
+
+
+}
+/* dekstop : layout yang ditampilkan 4 kolom */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: green;
+    }
+    .col-lg-4 {
+        width: 25%;
+        float: left;
+    }
+    .col-sm-6{
+        width: 25%;
+        float: left;
+    }
+    
+}
+    body {
+        
+    }
+    
+
 /* calss selector */
 .text-primary {
     color: aqua;
@@ -15,10 +53,7 @@ body {
     width: 25%;
     float: left;
 }
-.col-50{
-    width: 50%;
-    float: left;
-}
+
 .img-responsive {
     width: 100%;
     max-height: 500px;
@@ -31,4 +66,9 @@ body {
 }
 .p-1 {
     padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
