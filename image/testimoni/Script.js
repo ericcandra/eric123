@@ -22,7 +22,6 @@ btnSimpan.addEventListener("click", function() {
     // panggil get data
     getData();
 });
-
 // tgl 16 04 2024 selasa
 // tampilkan ke dalam localstorage
 function getData(){
